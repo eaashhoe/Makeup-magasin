@@ -2,4 +2,602 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    }
+
+                                                        /*text dekoration */
+
+a{
+    color: black;
+    text-decoration: none;
+    }
+a:hover{
+    color: black;
+    text-decoration:underline
+    }
+
+h1{
+    font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35pt;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+
+h3{
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    letter-spacing: 2px;
+    }
+
+h4{
+    text-transform: uppercase;
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 5px;
+    }
+
+h5{
+    text-transform: uppercase;
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 5px;
+    color: grey;
+    }
+
+p, ol{
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
+    }   
+
+.linksansserif{
+    font-family: ivypresto-display, serif;
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    }
+
+.uppercaseheadline{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: black;
+    }
+
+.underline{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-align: center;
+    color: black;
+    }
+
+.subnavbtnunderline {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;  
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    }
+
+.whitetext{
+    color: white;
+    }
+
+                                                        /* Navigation menu */
+header{
+    position:sticky;
+    top:0;
+    z-index: 1;
 }
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 1%;
+
+    background-color: #ffecef; 
+    }
+
+/*logo*/
+  .logo{
+    height: 55px;
+    width: 125px;
+    }
+
+/* Navigation links */
+  .navbar a {
+    padding: 14px 16px;
+    float: left;
+    }
+
+/*Navigantion hover underline*/
+  .navbar :hover{
+    text-decoration: underline;
+    }
+
+/* Subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+    }  
+
+/* Subnavigation button */
+.subnav .subnavbtn {
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;  
+    font-family: gill-sans-nova, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 5px;
+    }
+
+ /* Style til subnav content - position absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    background-color: #ffecef;
+    }
+
+/* Style the subnav links */
+.subnav-content a {
+    float: left;
+    }
+
+/* Tilføj underline hover på subnav */
+.subnav-content a:hover {
+    text-decoration: underline;
+    }
+
+/*fold ud når mavn over over menupunkter*/
+.subnav:hover .subnav-content {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    }
+
+/*Log ind knap*/
+  .navloginbutton{
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-color: transparent;
+ 
+    text-transform: uppercase;
+    font-family: ivypresto-display, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+    letter-spacing: 5px;
+  }
+                                                        /*Forside*/
+                                                      /*Forside Main*/
+
+  #forsidemain{
+    margin:4% 12%;
+    }
+                                                    /*Hero section*/
+.hero{
+    margin-bottom: 100px;
+    }
+
+#textinpic{
+    width:100%;
+    height:530px;
+    background-image:url("img/makeuptrend_blue_picture.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+                                                    
+    display:flex;
+    align-items:flex-end;
+    justify-content: center;
+    }                            
+    
+#textinpic > h4{
+    width:80%;
+    text-align:center;
+    margin-bottom:40px;
+    }
+
+#heroteaser{
+    margin: 10px 110px;
+    }
+
+                                                    /*kort section*/
+section.cards {
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 250px;
+    }
+
+section.cards > div{
+    width:500px;
+    height:450px;
+    padding-top:20px;
+
+    text-align:center;
+    }
+
+section.cards > div > img{
+    width:500px;
+    }
+
+section.cards > div > h2{
+    text-transform: uppercase;
+    font-size:30pt;
+
+    padding: 2%;
+    }
+
+section.cards > div > h3{
+    font-size:12pt;
+    }
+
+section.cards > div > h4 {
+    margin-top:10px;
+    }   
+
+section.cards > div > h4 > a{
+    color: black;
+    }   
+
+section.cards > div > h4 > a:hover{
+    text-decoration: underline;
+    }     
+
+
+
+                             /*Farvet sektioner - bruges i makeuptrend og tik tok filtre artikler*/
+
+.boxoverpic{
+    position: relative;
+    width: 80%;
+    bottom: 80px;
+    margin:1% 10%;
+    padding-top: 50px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.boxoverpic h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+.boxoverpic p{
+    padding:20px 200px;
+    letter-spacing: 2px;
+    }
+
+.textbox{
+    padding: 1% 5%;
+    }
+
+/*Sektion med blå tekst og gul baggrund*/
+
+.textpicyellow{
+    display: flex;
+    align-items: center;
+    padding: 5% 14%;
+
+    background-color: #fdeec5;
+    }
+
+.textpicyellow h2{
+    color:#001ad9;
+    font-size: 26pt;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+    }
+
+.circlebuttondarkblue{
+    background-color: transparent;
+
+    border: 1px solid #001ad9;
+    border-radius: 50%;
+    padding-left:15px;
+    padding-right: 10px;
+
+    color:#001ad9;
+    font-size: 25pt;
+    font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 6px;
+    text-align: center;
+    }
+
+/*Sektion med orange tekst og transperant baggrund*/
+
+.textpicorange{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    }
+
+.textpicorange h2{
+    color:#ff7e00;
+    font-size: 26pt;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+    }
+
+.circlebuttonorange{
+    background-color: transparent;
+
+    border: 1px solid #ff7e00;
+    border-radius: 50%;
+    padding-left:15px;
+    padding-right: 10px;
+
+    color:#ff7e00;
+    font-size: 25pt;
+    font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 6px;
+    text-align: center;
+    }
+
+/*Sektion med blå tekst og blå  baggrund*/
+
+.textpicblue{
+    display: flex;
+    align-items: center;
+    padding: 5% 14%;
+
+    background-color: #c0deeb;
+    }
+
+.textpicblue h2{
+    color:#001ad9;
+    font-size: 26pt;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+    }
+
+/*Sektion med pink tekst og lyserød  baggrund*/
+
+.textpicpink{
+    display: flex;
+    align-items: center;
+    padding: 5% 14%;
+
+    background-color: #ffecef;
+    }
+
+.textpicpink h2{
+    color:#ff0078;
+    font-size: 26pt;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+    }
+
+.circlebuttonpink{
+    background-color: transparent;
+
+    border: 1px solid #ff0078;
+    border-radius: 50%;
+    padding-left:15px;
+    padding-right: 10px;
+
+    color:#ff0078;
+    font-size: 25pt;
+    font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 6px;
+    text-align: center;
+    }
+/*Sektion med blå tekst og transperant baggrund*/
+
+.textpicblueclear{
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    }
+
+.textpicblueclear h2{
+    color:#001ad9;
+    font-size: 26pt;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+    }
+/*Sektion med pink tekst og transperant  baggrund*/
+
+.textpicpinkclear{
+    display: flex;
+    align-items: center;
+    padding: 5% 14%;
+
+    }
+
+.textpicpinkclear h2{
+    color:#ff0078;
+    font-size: 26pt;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+    }
+
+/*Sektion med orange tekst og lyserød  baggrund*/
+
+.textpicorangepink{
+    display: flex;
+    align-items: center;
+    padding: 5% 14%;
+
+    background-color: #ffecef;
+    }
+
+.textpicorangepink h2{
+    color:#ff7e00;
+    font-size: 26pt;
+    text-transform: uppercase;
+
+    padding-bottom: 20px;
+    }
+
+.textpicorangepink ol{
+    margin-left: 30px;
+    margin-right: 5px;
+    }
+
+.tiktok-embed{
+    max-width: 605px;
+    min-width: 325px;
+    }
+                                            /*oktober challenge*/
+.h2textwithpic{
+    padding: 20px 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.h2textwithpic h2{
+    font-size: 30pt;
+    text-transform: uppercase;
+    text-align: center;
+    
+    padding-bottom: 20px;
+    }
+
+.h2textwithpic p {
+    padding-bottom: 50px;
+    } 
+
+.h2textwithpic img {
+    padding-bottom: 50px;
+    }
+
+#youtubeembed{
+    width:760px;
+    height:515px;
+    margin-bottom: 50px;
+    border: 0;
+    }
+    
+                                    /*sidste sektion på tik tok trend og oktober challenge*/
+.textonly{
+    padding: 20px 250px;
+    }
+
+.textonly h2{
+    color:#ff0078;
+    font-size: 26pt;
+    text-transform: uppercase;
+    text-align: center;
+    
+    padding-top: 60px;
+    padding-bottom: 20px;
+    }
+
+.twovideoonrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 150px;
+    }
+                                                        /*Footer*/
+
+footer{
+    background-color: #ffecef;
+    }
+
+footer section{
+    padding-top: 100px;
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+
+    text-align: center;
+    color: black;
+    }   
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+    line-height: 30px;
+    }
+
+footer h4 {
+    padding-bottom: 20px;
+    }
+
+
+footer li {
+    padding-bottom: 10px;
+    }
+
+footer a {
+    padding-bottom: 10px;
+    } 
+
+footer a:hover {
+    text-decoration: underline;
+    }
+
+.vl {
+    border-left: 1px solid black;
+    height: 200px;
+    position: static;
+    margin-top: 25px;
+    }
+
+footer img {
+    max-width: 10%;
+    padding-bottom: 50px;
+    margin-left: 55px;
+    }
